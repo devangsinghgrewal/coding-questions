@@ -11,5 +11,5 @@ def isPalindrome(string):
 			return False
 		leftIdx += 1
 		rightIdx -=1
-		
+
 	return True 
