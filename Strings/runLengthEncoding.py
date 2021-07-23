@@ -1,6 +1,8 @@
 # Write a function that takes in non-empty string and return it's run length encoding
 
-# Worst -Time 2O(N) --> O(N) | Space O(2N) --> O(N)
+# Optimal Solution 
+
+# Time Complexity(Worst) 2 O(N) --> O(N) | Space Complexity(Worst) O(2N) --> O(N)
 
 def runLengthEncoding(string):
     chars = []
@@ -13,7 +15,7 @@ def runLengthEncoding(string):
             chars.append(str(length))
             chars.append(string[i - 1])
             length = 1
-    # Hand the last case
+    # Handle the last case
     chars.append(str(length))
     chars.append(string[len(string) - 1])
     return "".join(chars)
