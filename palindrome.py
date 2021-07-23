@@ -12,4 +12,4 @@ def isPalindrome(string):
 		leftIdx += 1
 		rightIdx -=1
 
-	return True 
+	return True
