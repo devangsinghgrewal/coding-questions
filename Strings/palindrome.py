@@ -7,7 +7,7 @@
 # Space Complexity - O(1)
 
 def isPalindrome(string):
-    leftIdx = 0
+	leftIdx = 0
 	rightIdx = len(string) - 1
 	while leftIdx < rightIdx:
 		if string[leftIdx] != string[rightIdx]:
