@@ -19,6 +19,12 @@ def longestPalindromicSubstring(string):
 
 # Solution 2 - Optimal
 # Time O(N^2) | Space O(N). N is the len of string
+# It's true that throughout our traversal of the input string, 
+# we only store an array of length 2; however, we ultimately still need to slice the longest
+#  palindromic substring out of the string, and this longest palindromic substring can be as 
+#  large as the string itself, in the worst case.
+
+Thus, the algorithm runs with linear space
 def longestPalindromicSubstring(string):
     currentLongest = [0, 1]
     for i in range(1, len(string)):
